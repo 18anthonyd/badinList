@@ -33,6 +33,7 @@
                     </view>
                     <connections>
                         <outlet property="listTable" destination="hFj-S6-jai" id="fW4-oZ-65B"/>
+                        <segue destination="kaY-mW-7c4" kind="show" identifier="moveSegue" id="Gta-KF-Oia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -50,12 +51,30 @@
                     <view key="view" contentMode="scaleToFill" id="qDX-PJ-YhO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idc-44-1Ab">
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urz-xZ-xY2">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="idc-44-1Ab" firstAttribute="top" secondItem="dlH-s7-psG" secondAttribute="bottom" constant="50" id="Aqc-gb-5bU"/>
+                            <constraint firstItem="urz-xZ-xY2" firstAttribute="centerX" secondItem="qDX-PJ-YhO" secondAttribute="centerX" id="X2u-DM-7FN"/>
+                            <constraint firstItem="urz-xZ-xY2" firstAttribute="top" secondItem="dlH-s7-psG" secondAttribute="bottom" constant="309" id="e6G-YW-8iV"/>
+                            <constraint firstItem="idc-44-1Ab" firstAttribute="centerX" secondItem="qDX-PJ-YhO" secondAttribute="centerX" id="vE8-9Z-R7K"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLB-Rr-XOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="139"/>
+            <point key="canvasLocation" x="845.60000000000002" y="194.75262368815595"/>
         </scene>
     </scenes>
 </document>
